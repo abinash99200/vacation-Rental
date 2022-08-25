@@ -1,0 +1,48 @@
+/* Client Area CSS */
+.feedback-area {
+    .section-title {
+        h4 {
+            @include max-xs {
+                font-size: 45px;
+                line-height: 50px;
+            }
+            @include min-sm {
+                font-size: 40px;
+            }
+        }
+    }
+    .feadback {
+        .single-feadback {
+            display: flex !important;
+            flex-wrap: wrap;
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                margin-right: 15px;
+            }
+            .feadback-content {
+                width: 74%;
+                i {
+                    font-size: 30px;
+                    color: #fd7792;
+                }
+                p {
+                    color: gray;
+                    margin: 10px 0;
+                }
+                h3 {
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #333;
+                    line-height: 24px;
+                    text-transform: capitalize;
+                    span {
+                        display: block;
+                        color: gray;
+                    }
+                }
+            }
+        }
+    }
+}

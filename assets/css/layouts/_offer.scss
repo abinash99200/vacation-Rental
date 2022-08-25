@@ -1,0 +1,66 @@
+/* Offer Area CSS */
+.offer-area {
+    .offer-img {
+        img {}
+        .offer-img-content {
+            h4 {
+                font-weight: 400;
+                font-size: 33px;
+                font-family: 'Playfair Display', serif;
+                margin: 20px 0 20px 0;
+            }
+            p {
+                color: gray;
+            }
+        }
+    }
+    .section-title {
+        margin: 40px;
+        padding: 0;
+        text-align: left;
+        p {
+            margin: 25px 0 20px 0;
+        }
+        @include max-xs {
+            margin: 50px 0;
+         }
+        @include min-sm {
+            margin: 50px 0;
+         }
+        @include min-md {
+            margin: 50px 0;
+         }
+        @include min-lg {
+           margin: 50px 0;
+        }
+    }
+    .offer-service {
+        margin-bottom: 50px;
+        @include max-xs {
+            padding: 0 20px;
+        }
+        i {
+            font-size: 24px;
+            color: #fff;
+            background-color: #fd7792;
+            width: 100%;
+            max-width: 70px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            border-radius: 50%;
+        }
+        .offer-service-content {
+            margin-left: 10px;
+            h4 {
+                font-size: 17px;
+                font-weight: 500;
+                color: #000;
+            }
+            p {
+                margin: 10px 0;
+                color: gray;
+            }
+        }
+    }
+}

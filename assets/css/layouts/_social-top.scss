@@ -1,0 +1,40 @@
+/* Social Top Area CSS */
+.social-top {
+    background-color: #fc456a;
+    .top-contact {
+        @include max-xs {
+            text-align: center;
+        }
+        @include min-sm {
+            text-align: center;
+        }
+        p {
+            color: #808080;
+            a {
+                font-size: 12px;
+                color: #fff;
+                &:hover {
+
+                }
+            }
+        }
+    }
+    .social-top-icon {
+        text-align: right;
+        @include max-xs {
+            text-align: center;
+            margin-top: 15px;
+        }
+        @include min-sm {
+            text-align: center;
+            margin-top: 15px;
+        }
+        a {
+            margin-left: 30px;
+            color: #fff;
+            i {
+
+            }
+        }
+    }
+}

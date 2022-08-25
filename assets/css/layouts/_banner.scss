@@ -1,0 +1,153 @@
+/* Banner Area CSS */
+.banner-area {
+    .single-banner-bg {
+        height: 100vh;
+        .banner-content {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            @include max-xs {
+                text-align: center;
+            }
+            .banner-left-content {
+                @include min-lg {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    height: 100vh;
+                }
+                h2 {
+                    font-size: 18px;
+                    font-weight: 300;
+                    color: #fff;
+                }
+                h1 {
+                    font-size: 80px;
+                    color: #fff;
+                    line-height: 90px;
+                    font-family: 'Playfair Display', serif;
+                    @include max-xs {
+                        font-size: 40px;
+                        line-height: 40px;
+                    }
+                    @include min-sm {
+                        font-size: 60px;
+                        line-height: 54px;
+                    }
+                    @include min-lg {
+                        font-size: 75px;
+                    }
+                }
+                .banner-btn {
+                    margin-top: 50px;
+                    @include max-xs {
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .book-apartment{
+                background-color: #fff;
+                padding: 40px;
+                border-radius: 8px;
+                @include max-xs {
+                    display: none;
+                }
+                @include min-sm {
+                    display: none;
+                }
+                @include min-md {
+                    display: none;
+                }
+                @include min-lg {
+                    padding: 11px;
+                    margin: 10px;
+                }
+
+                h3 {
+                    font-size: 28px;
+                    color: #000;
+                    font-family: 'Playfair Display', serif;
+                    font-weight: 400;
+                    margin-bottom: 30px;
+                    @include min-lg {
+                        margin-bottom: 10px;
+                    }
+                }
+                input {
+                    width: 100%;
+                    border: 0;
+                    background-color: #ddd;
+                    color: #000;
+                    padding: 10px;
+                    margin-bottom: 20px;
+                }
+                .input-wrap {
+                    input {
+                        width: 100%;
+                    }
+                    select {
+                        width: 100%;
+                        border: 0;
+                        background-color: #ddd;
+                        color: #000;
+                        padding: 10px;
+                        margin-bottom: 20px;  
+                    }
+                }
+            }
+        }
+    }
+    .mobile-apartment {
+        padding: 10px;
+        display: none;
+        @include min-sm {
+            display: inherit;
+        }
+        @include min-md {
+            display: inherit;
+        }
+        @include min-lg {
+            display: none;
+        }
+        .book-apartment-mobile {
+            background-color: #fff;
+            border-radius: 8px;
+            @include min-lg {
+                padding: 11px;
+                margin: 10px;
+            }
+            h3 {
+                font-size: 28px;
+                color: #000;
+                font-family: 'Playfair Display', serif;
+                font-weight: 400;
+                margin-bottom: 30px;
+                @include min-lg {
+                    margin-bottom: 10px;
+                }
+            }
+            input {
+                width: 100%;
+                border: 0;
+                background-color: #ddd;
+                color: #000;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+            .input-wrap {
+                input {
+                    width: 100%;
+                }
+                select {
+                    width: 100%;
+                    border: 0;
+                    background-color: #ddd;
+                    color: #000;
+                    padding: 10px;
+                    margin-bottom: 20px;  
+                }
+            }
+        }
+    }
+}

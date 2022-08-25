@@ -1,0 +1,65 @@
+/* Blog Area CSS */
+.blog-area {
+    background-color: #ddd;
+    .section-title {
+        @include max-xs {
+            margin: 0;
+            padding: 0;
+        }
+        h4 {
+            @include max-xs {
+                line-height: 54px;
+            }
+            @include min-sm {
+                font-size: 45px;
+            }
+            span {
+                display: block;
+                font-size: 16px;
+                margin: 20px 0;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .blog {
+        border-radius: 7px;
+        @include max-xs {
+            margin-bottom: 30px;
+        }
+        @include min-sm {
+            margin-bottom: 30px;
+        }
+        @include min-md {
+            margin-bottom: 20px;
+        }
+        .single-blog {
+            img {
+                width: 100%;
+            }
+            .blog-content {
+                padding: 20px;
+                background-color: #fff;
+                h3 {
+                    font-size: 24px;
+                    text-align: center;
+                    font-weight: 400;
+                    font-family: 'Playfair Display', serif;
+                    a {
+
+                    }
+                }
+                .blog-meta {
+                    text-align: center;
+                    padding: 15px 0;
+                    a {
+                        color: #fd7792;
+                    }
+                }
+                p {
+                    color: gray;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

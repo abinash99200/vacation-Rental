@@ -1,0 +1,100 @@
+/* Apartment CSS */
+.aparment-area {
+    .section-title {
+        h4 {
+            @include max-xs {
+                font-size: 48px;
+            }
+        }
+    }
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+            .col-xxl-6 {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+    .appartment {
+        display: flex;
+        flex-wrap: wrap;
+        transition: .3s;
+        ul {
+            li {
+                i {
+                    color: #fd7792;
+                }
+            }
+        }
+        &:hover {        
+            background-color: #fd7792;
+            i {
+                color: #fff;
+            }
+            .outline-btn {
+                background-color: #fff;
+            }
+            .aparment-content {
+                ul {
+                    li {
+                        color: #fff;
+                        span {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        img {
+            width: 50%;
+            height: 400px;
+            @include max-xs {
+                width: 100%;
+            }
+        }
+        .aparment-content {
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            @include max-xs {
+                width: 100%;
+                padding: 20px 0;
+            }
+            h3 {
+               text-transform: capitalize;
+               font-family: 'Playfair Display', serif;
+               font-weight: 400;
+            }
+            ul {
+                margin: 10px 0 15px 0;
+                li {
+                    text-align: center;
+                    margin-bottom: 10px;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    margin: 0 3px;
+                    color: #8e8e8e;
+                    span {
+                        font-weight: 400;
+                        color: #808080;
+                    }
+                }
+                .outline-btn {
+                    padding: 10px 15px;
+                    color: #000000;
+                    text-transform: capitalize;
+                    border: 1px solid #ddd;
+                    display: inline-block;
+                    margin: 15px 0;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

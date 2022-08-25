@@ -1,0 +1,115 @@
+/* Footer Area CSS */
+.footer-area {
+    background-color: #272727;
+    .single-footer {
+        @include max-xs {
+            margin-bottom: 35px;
+        }
+        @include min-sm {
+            margin-bottom: 35px;
+        }
+        @include min-md {
+            margin-bottom: 35px;
+        }
+        h4 {
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            a {
+                color: #fff;
+            }
+        }
+        p {
+            color: #b0b0b0;
+            margin: 20px 0;
+        }
+        a {
+            color: #fd7792;
+            text-transform: capitalize;
+        }
+        ul {
+            li {
+                margin-bottom: 7px;
+                a {
+                    color: #b0b0b0; 
+                }
+            }
+        }
+        .tag {
+            a {
+                display: inline-block;
+                padding: 8px;
+                border: 1px solid #b0b0b0;
+                color: #b0b0b0;
+                margin: 12px 5px;
+                font-size: 14px;
+            }
+        }
+        .sbuscribe-input {
+            margin-bottom: 20px;
+            input {
+                padding: 15px 10px;
+                width: 100%;
+                border: 0;
+                text-transform: capitalize;
+            }
+            i {
+                padding: 15px 16px;
+                background-color: #fd7792;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+        .follow-us {
+            a {
+                i {
+                    font-size: 20px;
+                    color: #fff;
+                    margin: 0 20px 0 0;
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        @include max-xs {
+            margin-bottom: 15px;
+        }
+        @include min-sm {
+            margin-bottom: 15px;
+        }
+        p {
+            color: #b0b0b0;
+            font-size: 14px;
+            @include max-xs {
+                text-align: center;
+            }
+            @include min-sm {
+                text-align: center;
+            }
+            i {
+
+            }
+        }
+    }
+    .footer-bottom-list {
+        ul {
+            @include max-xs {
+                justify-content: center;
+            }
+            @include min-sm {
+                justify-content: center;
+            }
+            li {
+                text-align: right;
+                a {
+                    color: #b0b0b0;
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+    .footer-padding {
+        padding-top: 55px;
+    }
+}

@@ -1,0 +1,16 @@
+/* Typograpgy CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&family=Playfair+Display:wght@400;500;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+    font-size: 14px;
+    line-height: 22px; 
+    font-family: 'Poppins', sans-serif;
+}
+/* Font-size CSS */
+$font-size: (h1, 40px, 48px, 800), (h2, 32px, 38px, 700), (h3, 28px, 34px, 600), (h4, 24px, 28px, 800), (h5, 20px, 24px, 500), (h6, 16px, 20px, 400), (p, 16px, 20px, 400);
+@each $name, $font_size, $line_height, $font_weight in $font-size {
+    #{$name} {
+        font-size: $font_size;
+        font-weight: $font_weight;
+        line-height: $line_height;
+    }
+}

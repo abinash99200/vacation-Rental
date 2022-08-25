@@ -1,0 +1,21 @@
+/* CTA Area CSS */
+.cta-area {
+    .section-title {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        h4 {
+            color: #fff;
+            font-weight: 600;
+            @include max-xs {
+                line-height: 60px;
+            }
+        }
+        p {
+            color: #fff;
+            margin: 30px 0;
+        }
+    }
+    .banner-btn {
+        text-align: center;
+    }
+}

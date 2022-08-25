@@ -1,0 +1,67 @@
+/* Header Area CSS */
+.header-area {
+    position: relative;
+    .logo {
+        a {
+           font-size: 24px;
+           color: #000;
+           font-weight: 700;
+           text-transform: capitalize;
+           span {
+            color:#fd7792;
+           }
+        }
+    }
+    .menu {
+        ul {
+            @include min-md {
+                display: none;
+            }
+            li {
+                margin-right: 30px;
+                @include min-md {
+                    margin-right: 20px;
+                    display: none;
+                }
+                a {
+                    text-transform: capitalize;
+                    font-size: 15px;
+                    color: #4d4d4d;
+                    &:hover {
+                        &:after {
+                            width: 100%;
+                            transition: width 0.3s linear;
+                        }
+                     }
+                     &:after {
+                        content: "";
+                        width: 0;
+                        height: 2px;
+                        background-color: #fd7792;
+                        display: block;
+                        margin: auto;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.slicknav_menu {
+    display: none;
+    @include min-md {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+    @include min-md {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
